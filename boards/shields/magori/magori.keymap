@@ -20,6 +20,7 @@
             //
             //                               |  TAB   |   RET    |          |  SPACE  |  BKSP   |
                                              &kp TAB &kp ENTER               &kp SPACE &kp BSPC
+            >;
         };
     };
  };
