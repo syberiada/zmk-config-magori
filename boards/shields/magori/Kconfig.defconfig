@@ -1,0 +1,17 @@
+if SHIELD_MAGORI_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "Magori KBD"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_MAGORI_LEFT || SHIELD_MAGORI_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

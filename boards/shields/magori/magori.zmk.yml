@@ -1,0 +1,11 @@
+file_format: "1"
+id: magori
+name: Magori
+type: shield
+url: https://github.com/syberiada/zmk-config-magori
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - magori_left
+  - magori_right
