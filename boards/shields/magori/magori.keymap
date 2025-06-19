@@ -16,11 +16,11 @@
                 &kp V      &kp N      &kp R      &kp T      &kp S      &kp G          &kp Y       &kp H      &kp A      &kp E     &kp I      &kp K 
             //           |──────────┼──────────┼──────────┼──────────|                         |───────────┼──────────┼──────────┼──────────|
             //           |    Q     |    X     |    M     |    C     |                         |    P      |     : ;    |     , _       |    / ?    |
-                            &kp Q     &kp X      &kp M      &kp C                                &kp P   &mt COLON SEMI &mt COMMA UNDER &mt FSLH QMARK
+                            &kp Q     &kp X      &kp M      &kp C                                &kp P   &mt SEMI COLON &mt COMMA UNDER &mt FSLH QMARK
             //
-            //                               |  TAB   |   RET    |          |  SPACE  |  BKSP   |
-                                             &kp TAB &kp ENTER               &kp SPACE &kp BSPC
+            //                                              |  TAB   |   RET    |   |  SPACE  |  BKSP   |
+                                                             &kp TAB  &kp ENTER      &kp SPACE &kp BSPC
             >;
         };
-    };
+    };  vcv c
  };
