@@ -22,5 +22,5 @@
                                                              &kp TAB  &kp ENTER      &kp SPACE &kp BSPC
             >;
         };
-    };  vcv c
+    };
  };
