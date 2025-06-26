@@ -19,8 +19,8 @@
             //           |    Q     |    X     |    M     |    C     |                         |    P      |     : ;  |   ' "    |   / ?    |
                             &kp Q     &kp X      &kp M      &kp C                                &kp P  &mt SEMI COLON &mt SQT DQT &mt FSLH QMARK
             //
-            //                                              |  TAB   |   RET    |   |  SPACE  |  BKSP   |
-                                                             &kp TAB  &kp ENTER      &kp SPACE &kp BSPC
+            //                                              |TAB (L1)|   RET    |   |  SPACE  |  BKSP   |
+                                                            &lt 1 TAB  &kp ENTER      &kp SPACE &kp BSPC
             >;
         };
         num { // Layer 1
@@ -28,8 +28,8 @@
             bindings = <
             // ------------------------------------------------- NUMPAD -------------------------------------------------
             //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬───────────┬──────────┬──────────┬──────────┬──────────╮
-            //|          |          |          |    [     |    ]     |    | \   |   |   - _    |     7     |    8     |    9     |          |          |
-                 &none     &none      &none     &kp LBKT   &kp RBKT  &mt PIPE BSLH &mt MINUS UNDER &kp N7     &kp N8     &kp N9    &none      &none
+            //|          |          |          |    [     |    ]     |    | \   |   |   - _    |     7     |    8     |    9     |          |   L0     |
+                 &none     &none      &none     &kp LBKT   &kp RBKT  &mt PIPE BSLH &mt MINUS UNDER &kp N7     &kp N8     &kp N9    &none      &to 0
             //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼───────────┼──────────┼──────────┼──────────┼──────────┤
             //|          |          |          |    (     |    )     |          |   |    0     |     4     |    5     |     6    |          |          |
                 &none      &none      &none     &kp LPAR   &kp RPAR     &none          &kp 0       &kp N4     &kp N5      &kp N6    &none     &none 
