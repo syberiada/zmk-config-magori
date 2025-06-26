@@ -14,6 +14,11 @@
             key-positions = <6 7>;
             bindings = <&kp TAB>;
         };
+        combo_ret {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&kp ENTER>;
+        };
     };
 };
 / {
@@ -34,8 +39,8 @@
             //           |    Q     |    X     |    M     |    C     |                         |    P      |   : ;    |   ' "    |   / ?    |
                             &kp Q     &kp X      &kp M      &kp C                                &kp P  &mt SEMI COLON &mt SQT DQT &mt FSLH QMARK
             //
-            //                                            |  LCTRL   |   LGUI   |   |  SPACE  |  RET   |
-                                                            &kp LCTRL  &kp LGUI      &kp SPACE &kp ENTER
+            //                                            |  LCTRL   |   LGUI   |   |  SPACE   |    num    |
+                                                            &kp LCTRL  &kp LGUI      &kp SPACE    &to 1
             >;
         };
         num { // Layer 1
@@ -43,8 +48,8 @@
             bindings = <
             // ------------------------------------------------- NUMPAD -------------------------------------------------
             //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬───────────┬──────────┬──────────┬──────────┬──────────╮
-            //|          |          |          |    [     |    ]     |    | \   |   |   - _    |     7     |    8     |    9     |          |   L0     |
-                 &none     &none      &none     &kp LBKT   &kp RBKT  &mt PIPE BSLH &mt MINUS UNDER &kp N7     &kp N8     &kp N9    &none      &to 0
+            //|          |          |          |    [     |    ]     |    | \   |   |   - _    |     7     |    8     |    9     |          |          |
+                 &none     &none      &none     &kp LBKT   &kp RBKT  &mt PIPE BSLH &mt MINUS UNDER &kp N7     &kp N8     &kp N9    &none      &none
             //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼───────────┼──────────┼──────────┼──────────┼──────────┤
             //|          |          |          |    (     |    )     |          |   |    0     |     4     |    5     |     6    |  + =     |          |
                 &none      &none      &none     &kp LPAR   &kp RPAR     &none         &kp 0       &kp N4     &kp N5      &kp N6 &mt PLUS EQUAL &none
@@ -52,8 +57,8 @@
             //           |          |          |    {     |    }     |                         |     1     |    2     |    3     |          |
                             &none     &none     &kp LBRC    &kp RBRC                              &kp N1     &kp N2     &kp N3     &none
             //
-            //                                            |   LGUI   |   RET    |   |  SPACE   |    L2     |
-                                                           &kp LGUI   &kp ENTER      &kp SPACE   &to 2
+            //                                            |   base   |          |   |  SPACE   |   mgmt    |
+                                                             &to 0      &none         &kp SPACE   &to 2
             >;
         };0
         mgmt { // Layer 2
@@ -61,17 +66,17 @@
             bindings = <
             // ------------------------------------------------- MANAGEMENT -------------------------------------------------
             //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬───────────┬──────────┬──────────┬──────────┬──────────╮
-            //|          |          |          |          |          |          |   | bt_clear |           |          |          |          |   L0     |
-                 &none     &none      &none      &none      &none      &none         &bt BT_CLR   &none      &none      &none     &none      &to 0
+            //|          |          |          |          |          |          |   | bt_clear |           |          |          |          |          |
+                 &none     &none      &none      &none      &none      &none         &bt BT_CLR   &none      &none      &none      &none      &none
             //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-            //|bootloader|          |          |          |          |          |   |    0     |  BT 4     | BT 5     |     6    |          |bootloader|
+            //|bootloader|          |          |          |          |          |   |          |  BT 4     | BT 5     |     6    |          |bootloader|
               &bootloader  &none      &none      &none      &none      &none          &none   &bt BT_SEL 3 &bt BT_SEL 4  &none     &none    &bootloader
             //           |──────────┼──────────┼──────────┼──────────|                         |───────────┼──────────┼──────────┼──────────|
             //           |          |          |          |          |                         |  BT 1     | BT 2     | BT 3     |          |
                             &none     &none      &none      &none                          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &none
             //
-            //                                            |   LGUI   |   RET    |   |  SPACE   |           |
-                                                           &kp LGUI   &kp ENTER      &kp SPACE   &none
+            //                                            |   base   |          |   |  SPACE   |           |
+                                                              &to 0    &none          &kp SPACE   &none
             >;
         };
     };
