@@ -60,7 +60,7 @@
             //                                            |   base   |          |   |  SPACE   |   mgmt    |
                                                              &to 0      &none         &kp SPACE   &to 2
             >;
-        };0
+        };
         mgmt { // Layer 2
             display-name = "management";
             bindings = <
