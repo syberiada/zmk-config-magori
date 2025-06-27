@@ -29,7 +29,7 @@
             bindings = <&kp DOT>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        dminusdqt: minus_dqt {
+        minusdqt: minus_dqt {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp DQT>;
