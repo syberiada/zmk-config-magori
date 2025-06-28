@@ -61,8 +61,8 @@
             //           |    Q     |    X     |    M     |    C     |                         |    P     |   . >    |   - "    |   / <    |
                             &kp Q     &kp X      &kp M      &kp C                                &kp P      &dotgt    &minusdqt  &fslhlt
             //                                            ╭──────────┬──────────╮   ╭──────────┬──────────╮
-            //                                            |   NUM    |   DEL    |   |  SPACE   |  ENTER   |
-                                                            &mo 1      &kp DEL       &kp SPACE  &kp ENTER
+            //                                            |   NUM    |   DEL    |   |  SPACE   |NAV/ENTER |
+                                                            &mo 1      &kp DEL       &kp SPACE  &lt 3 ENTER
             >;
         };
         num { // Layer 1
@@ -96,6 +96,24 @@
             //           |──────────┼──────────┼──────────┼──────────|                         |──────────┼──────────┼──────────┼──────────|
             //           |          |          |          |          |                         |  BT 1    | BT 2     | BT 3     |          |
                             &none     &none      &none      &none                          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &none
+            //                                            ╭──────────┬──────────╮   ╭──────────┬──────────╮
+            //                                            |   base   |          |   |  SPACE   |          |
+                                                              &to 0    &none          &kp SPACE   &none
+            >;
+        };
+        nav { // Layer 3
+            display-name = "nav";
+            bindings = <
+            // ------------------------------------------------- MANAGEMENT -------------------------------------------------
+            //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
+            //|          |          |          |          |          |          |   |          |   HOME   |          |   PGUP   |          |          |
+                 &none     &none      &none      &none      &none      &none          &none     &kp HOME    &none     &kp PG_UP   &none      &none
+            //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+            //|          |          |          |          |          |          |   |          |   LEFT   |    UP    |  RIGHT   |          |          |
+                 &none     &none      &none      &none      &none      &none          &none      &kp LEFT   &kp UP     &kp RIGHT  &none     &none
+            //           |──────────┼──────────┼──────────┼──────────|                         |──────────┼──────────┼──────────┼──────────|
+            //           |          |          |          |          |                         |   END    |   DOWN   |   PGDN   |          |
+                            &none     &none      &none      &none                                &kp END   &kp DOWN   &KP PG_DN   &none
             //                                            ╭──────────┬──────────╮   ╭──────────┬──────────╮
             //                                            |   base   |          |   |  SPACE   |          |
                                                               &to 0    &none          &kp SPACE   &none
