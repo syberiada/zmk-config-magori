@@ -1,4 +1,4 @@
-#include <behaviors.dtsi>
+aoaoaaoaoau#include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
@@ -89,7 +89,7 @@
             // ------------------------------------------------- MANAGEMENT -------------------------------------------------
             //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
             //|          |          |          |          |          |          |   | bt_clear |          |          |          |          |          |
-                 &none     &none      &none      &none      &none      &none         &bt BT_CLR   &none     &none      &none      &none      &none
+             &bt BT_CLR_ALL &none     &none      &none      &none      &none         &bt BT_CLR   &none     &none      &none      &none      &none
             //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             //|bootloader|          |          |          |          |          |   |          |  BT 4    | BT 5     |     6    |          |bootloader|
               &bootloader  &none      &none      &none      &none      &none          &none   &bt BT_SEL 3 &bt BT_SEL 4  &none     &none    &bootloader
