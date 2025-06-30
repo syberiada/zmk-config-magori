@@ -41,6 +41,12 @@
             bindings = <&kp FSLH>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        commaqmark: comma_qmark {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp QMARK>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 };
 / {
