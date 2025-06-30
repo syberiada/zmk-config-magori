@@ -109,8 +109,8 @@
             //|          |          |          |          |          |          |   |   ESC    |   HOME   |    UP    |   PGUP   |          |          |
                  &trans     &trans     &trans     &trans     &trans     &trans        &kp ESC    &kp HOME   &kp UP     &kp PG_UP  &none      &none
             //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            //|          |          |          |          |          |          |   |          |   LEFT   |          |  RIGHT   |          |          |
-                 &trans    &trans     &trans     &trans     &trans     &trans         &none      &kp LEFT   &none      &kp RIGHT  &none      &none
+            //|          |          |          |          |          |          |   |   TAB    |   LEFT   |          |  RIGHT   |          |          |
+                 &trans    &trans     &trans     &trans     &trans     &trans         &kp TAB    &kp LEFT   &none      &kp RIGHT  &none      &none
             //           |──────────┼──────────┼──────────┼──────────|                         |──────────┼──────────┼──────────┼──────────|
             //           |          |          |          |          |                         |   END    |   DOWN   |   PGDN   |          |
                             &trans    &trans     &trans     &trans                               &kp END    &kp DOWN   &kp PG_DN  &none
