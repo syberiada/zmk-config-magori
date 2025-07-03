@@ -68,7 +68,7 @@
                  &none     &kp LPAR   &kp RPAR   &kp LBKT   &kp RBKT    &none         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0      &none
             //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             //|          |          |          |          |          |          |   |    1     |    2     |    3     |    4     |    5     |          |
-                 &none     &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT  &none         &kp N1     &kp N2     &kp N3     &kp N4     &kp N5      &none
+                 &none     &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT  &none         &kp N1     &kp N2     &kp N3     &kp N4     &kp N5      &to 2
             //           |──────────┼──────────┼──────────┼──────────|                         |──────────┼──────────┼──────────┼──────────|
             //           |    <     |    >     |    {     |    }     |                         |    .     |          |          |          |
                             &kp LT    &kp GT     &kp LBRC    &kp RBRC                            &kp DOT    &none      &none      &none
