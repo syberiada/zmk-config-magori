@@ -117,6 +117,7 @@
             //                                            |          |   mgmt   |   |          |          |
                                                             &none      &to 2          &none      &none
             >;
+        };
         fkeys { // Layer 4
             display-name = "fkeys";
             bindings = <
@@ -135,6 +136,5 @@
                                                              &none      &none          &none      &none
             >;
         };
-
     };
  };
