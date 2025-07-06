@@ -78,8 +78,8 @@
             //           |    <     |    >     |    {     |    }     |                         |    1     |     2    |    3     |   = +    |
                             &kp LT    &kp GT     &kp LBRC    &kp RBRC                            &kp N1      &kp N2    &kp N3    &kp EQUAL
             //                                            ╭──────────┬──────────╮   ╭──────────┬──────────╮
-            //                                            |          |          |   |          |          |
-                                                             &none     &none           &none      &none
+            //                                            |          |          |   |          |  fkeys   |
+                                                             &none     &none           &none      &mo 4
             >;
         };
         mgmt { // Layer 2
