@@ -15,11 +15,6 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-        combo_fkeys {
-            timeout-ms = <50>;
-            key-positions = <34 35>;
-            bindings = <&mo 4>;
-        };
     };
     behaviors {
         dotcomma: dot_comma {
@@ -60,8 +55,8 @@
             //           |    Q     |    X     |    M     |    C     |                         |    P     |   ! ?    |   ' "    |   / \    |
                             &kp Q     &kp X      &kp M      &kp C                                &kp P     &exclqmark  &kp SQT    &slashes
             //                                            ╭──────────┬──────────╮   ╭──────────┬──────────╮
-            //                                            |  MEDIA   |  SPACE   |   | NUM/DEL  |NAV/ENTER |
-                                                            &mo 3     &kp SPACE      &lt 1 DEL  &lt 3 ENTER
+            //                                            |  MEDIA   |  SPACE   |   | NAV/DEL  |NUM/ENTER |
+                                                            &mo 3     &kp SPACE      &lt 3 DEL  &lt 1 ENTER
             >;
         };
         num { // Layer 1
@@ -69,17 +64,17 @@
             bindings = <
             // ---------------------------------------------------------------- NUMPAD -------------------------------------------------
             //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-            //|          |    (     |    )     |    [     |    ]     |     |    |   |    .     |    7     |    8     |    9     |   - _    |          |
-                 &none     &kp LPAR   &kp RPAR   &kp LBKT   &kp RBKT   &kp PIPE       &kp DOT    &kp N7     &kp N8     &kp N9    &kp MINUS    &none
+            //|          |    (     |    )     |    [     |    ]     |     |    |   |    .     |    7     |    8     |    9     |          |          |
+                 &none     &kp LPAR   &kp RPAR   &kp LBKT   &kp RBKT   &kp PIPE       &kp DOT    &kp N7     &kp N8     &kp N9     &none      &none
             //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            //|          |          |          |          |          |          |   |    0     |    4     |    5     |    6     |          |          |
-                 &none     &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT  &none         &kp N0     &kp N4     &kp N5     &kp N6      &none      &none
+            //|          |          |          |          |          |          |   |    0     |    4     |    5     |    6     |    +     |    =     |
+                 &none     &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT  &none         &kp N0     &kp N4     &kp N5     &kp N6     &kp PLUS   &kp EQUAL
             //           |──────────┼──────────┼──────────┼──────────|                         |──────────┼──────────┼──────────┼──────────|
-            //           |    <     |    >     |    {     |    }     |                         |    1     |     2    |    3     |   = +    |
-                            &kp LT    &kp GT     &kp LBRC    &kp RBRC                            &kp N1      &kp N2    &kp N3    &kp EQUAL
+            //           |    <     |    >     |    {     |    }     |                         |    1     |     2    |    3     |    -     |
+                            &kp LT    &kp GT     &kp LBRC    &kp RBRC                            &kp N1      &kp N2    &kp N3    &kp MINUS
             //                                            ╭──────────┬──────────╮   ╭──────────┬──────────╮
-            //                                            |          |          |   |          |  fkeys   |
-                                                             &none     &none           &none      &mo 4
+            //                                            |          |          |   |   fkeys  |          |
+                                                             &none     &none           &mo 4      &none
             >;
         };
         mgmt { // Layer 2
@@ -106,13 +101,13 @@
             // ----------------------------------------------------------- MEDIA --- NAVIGATION -------------------------------------------------
             //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
             //|          |          |          |          |          |          |   |   ESC    |   HOME   |    UP    |   PGUP   |          |          |
-              &kp C_VOL_UP &none     &kp C_PREV  &kp C_PP  &kp C_NEXT   &none         &kp ESC    &kp HOME   &kp UP     &kp PG_UP  &none      &none
+              &kp C_VOL_UP &none     &kp C_PREV  &kp C_PP  &kp C_NEXT   &none         &kp ESC    &kp HOME   &kp UP     &kp PG_UP   &none      &none
             //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             //|          |          |          |          |          |          |   |   TAB    |   LEFT   |          |  RIGHT   |          |          |
-              &kp C_VOL_DN &none      &none      &none      &none      &none          &kp TAB    &kp LEFT   &none      &kp RIGHT  &none      &none
+              &kp C_VOL_DN &none      &none      &none      &none      &none          &kp TAB    &kp LEFT    &none     &kp RIGHT   &none      &none
             //           |──────────┼──────────┼──────────┼──────────|                         |──────────┼──────────┼──────────┼──────────|
             //           |          |          |          |          |                         |   END    |   DOWN   |   PGDN   |          |
-                            &none     &none      &none      &none                                &kp END    &kp DOWN   &kp PG_DN  &none
+                            &none     &none      &none      &none                                &kp END    &kp DOWN   &kp PG_DN   &none
             //                                            ╭──────────┬──────────╮   ╭──────────┬──────────╮
             //                                            |          |   mgmt   |   |          |          |
                                                             &none      &to 2          &none      &none
@@ -123,14 +118,14 @@
             bindings = <
             // ----------------------------------------------------------- MEDIA --- NAVIGATION -------------------------------------------------
             //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-            //|          |          |          |          |          |          |   |          |    F7    |    F8    |    F9    |   F10    |   F11    |
-                 &none      &none      &none      &none      &none      &none          &none      &kp F7     &kp F8     &kp F9    &kp F10    &kp F11
+            //|          |          |          |          |          |          |   |          |    F7    |    F8    |    F9    |   F10    |          |
+                 &none      &none      &none      &none      &none      &none          &none      &kp F7     &kp F8     &kp F9    &kp F10     &none
             //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            //|          |          |          |          |          |          |   |          |    F4    |    F5    |    F6    |          |   F12    |
-                 &none      &none      &none      &none      &none      &none          &none      &kp F4     &kp F5     &kp F6     &none     &kp F12
+            //|          |          |          |          |          |          |   |          |    F4    |    F5    |    F6    |   F11    |          |
+                 &none      &none      &none      &none      &none      &none          &none      &kp F4     &kp F5     &kp F6    &kp F11     &none
             //           |──────────┼──────────┼──────────┼──────────|                         |──────────┼──────────┼──────────┼──────────|
-            //           |          |          |          |          |                         |    F1    |    F2    |    F3    |          |
-                            &none     &none      &none       &none                                &kp F1     &kp F2     &kp F3     &none
+            //           |          |          |          |          |                         |    F1    |    F2    |    F3    |   F12    |
+                            &none     &none      &none       &none                                &kp F1     &kp F2     &kp F3    &kp F12
             //                                            ╭──────────┬──────────╮   ╭──────────┬──────────╮
             //                                            |          |          |   |          |          |
                                                              &none      &none          &none      &none
