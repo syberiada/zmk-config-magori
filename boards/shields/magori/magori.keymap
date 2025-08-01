@@ -46,17 +46,17 @@
             bindings = <
             // --------------------------------------------------- GRAPHITE MOD ----- HOMEROW MODS -----------------------------------
             //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-            //|   ` ~    |    B     |    L     |     D    |    W     |    Z     |   |   . ,    |    F     |    O     |    U     |    J     |   ; :    |
-               &kp GRAVE   &kp B      &kp L       &kp D     &kp W      &kp Z         &dotcomma   &kp F      &kp O      &kp U      &kp J      &kp SEMI
+            //|   ` ~    |    B     |    L     |     D    |    W     |    Z     |   |   . ,    |    F     |    O     |    U     |    J     |    P     |
+               &kp GRAVE   &kp B      &kp L       &kp D     &kp W      &kp Z         &dotcomma   &kp F      &kp O      &kp U      &kp J      &kp P
             //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             //|    V     |    N     |    R     |    T     |    S     |    G     |   |    Y     |    H     |    A     |     E    |    I     |    K     |
                 &kp V  &mt LGUI N &mt LALT R &mt LCTRL T &mt LSHIFT S  &kp G          &kp Y    &mt RSHIFT H &mt RCTRL A &mt RALT E &mt RGUI I &kp K 
             //           |──────────┼──────────┼──────────┼──────────|                         |──────────┼──────────┼──────────┼──────────|
-            //           |    Q     |    X     |    M     |    C     |                         |   ! ?    |   ' "    |   / \    |    P     |
-                            &kp Q     &kp X      &kp M      &kp C                               &exclqmark  &kp SQT    &slashes   &kp P     
+            //           |    Q     |    X     |    M     |    C     |                         |   ! ?    |   ' "    |   / \    |    ; :   |
+                            &kp Q     &kp X      &kp M      &kp C                               &exclqmark  &kp SQT    &slashes   &kp SEMI     
             //                                            ╭──────────┬──────────╮   ╭──────────┬──────────╮
-            //                                            |  MEDIA   |  del   |   | NAV/space  |NUM/ENTER |
-                                                            &mo 3     &kp DEL      &lt 3 SPACE  &lt 1 ENTER
+            //                                            | MEDIA/DEL|  SPACE   |   |NAV/SPACE |NUM/ENTER |
+                                                            &lt 3 DEL  &kp SPACE    &lt 3 SPACE  &lt 1 ENTER
             >;
         };
         num { // Layer 1
@@ -116,7 +116,7 @@
         fkeys { // Layer 4
             display-name = "fkeys";
             bindings = <
-            // ----------------------------------------------------------- MEDIA --- NAVIGATION -------------------------------------------------
+            // ---------------------------------------------------------------- FKEYS -------------------------------------------------------
             //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
             //|          |          |          |          |          |          |   |          |    F7    |    F8    |    F9    |   F10    |          |
                  &none      &none      &none      &none      &none      &none          &none      &kp F7     &kp F8     &kp F9    &kp F10     &none
