@@ -55,8 +55,8 @@
             //           |    Q     |    X     |    M     |    C     |                         |   ! ?    |   ' "    |   / \    |    ; :   |
                             &kp Q     &kp X      &kp M      &kp C                               &exclqmark  &kp SQT    &slashes   &kp SEMI     
             //                                            ╭──────────┬──────────╮   ╭──────────┬──────────╮
-            //                                            | MEDIA/DEL|  SPACE   |   |NAV/SPACE |NUM/ENTER |
-                                                            &lt 3 DEL  &kp SPACE    &lt 3 SPACE  &lt 1 ENTER
+            //                                            | MEDIA/RET|  SPACE   |   |NAV/SPACE | NUM/DEL  |
+                                                           &lt 3 ENTER  &kp SPACE    &lt 3 SPACE  &lt 1 DEL
             >;
         };
         num { // Layer 1
@@ -64,11 +64,11 @@
             bindings = <
             // ---------------------------------------------------------------- NUMPAD -------------------------------------------------
             //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-            //|          |          |    (     |    )     |    [     |    ]     |   |    .     |    7     |    8     |    9     |          |          |
-                 &none     &none      &kp LPAR   &kp RPAR   &kp LBKT   &kp RBKT       &kp DOT    &kp N7     &kp N8     &kp N9     &none      &none
+            //|          |          |    (     |    )     |    [     |    ]     |   |          |    7     |    8     |    9     |    +     |          |
+                 &none     &none      &kp LPAR   &kp RPAR   &kp LBKT   &kp RBKT        &none    &kp N7     &kp N8     &kp N9     &kp PLUS      &none
             //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            //|          |          |          |          |          |    |     |   |    0     |    4     |    5     |    6     |    +     |    =     |
-                 &none     &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT &kp PIPE       &kp N0     &kp N4     &kp N5     &kp N6     &kp PLUS   &kp EQUAL
+            //|          |          |          |          |          |    |     |   |    .     |    4     |    5     |    6     |    0     |    =     |
+                 &none     &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT &kp PIPE       &kp DOT     &kp N4     &kp N5     &kp N6    &kp 0     &kp EQUAL
             //           |──────────┼──────────┼──────────┼──────────|                         |──────────┼──────────┼──────────┼──────────|
             //           |    <     |    >     |    {     |    }     |                         |    1     |     2    |    3     |    -     |
                             &kp LT    &kp GT     &kp LBRC    &kp RBRC                            &kp N1      &kp N2    &kp N3    &kp MINUS
