@@ -20,7 +20,7 @@
 #        shield: settings_reset
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: magori_left
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: magori_right
