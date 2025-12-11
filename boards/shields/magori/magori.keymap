@@ -15,6 +15,11 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+        combo_special_space {
+            timeout-ms = <50>;
+            key-positions = <34 35>;
+            bindings = <&kp SPACE>;
+        };
     };
     behaviors {
         dotcomma: dot_comma {
@@ -55,8 +60,8 @@
             //           |    Q     |    X     |    M     |    C     |                         |   ! ?    |   ' "    |   / \    |    ; :   |
                             &kp Q     &kp X      &kp M      &kp C                               &exclqmark  &kp SQT    &slashes   &kp SEMI     
             //                                            ╭──────────┬──────────╮   ╭──────────┬──────────╮
-            //                                            | MEDIA/RET|  SPACE   |   |NAV/SPACE | NUM/DEL  |
-                                                           &lt 3 ENTER  &kp SPACE    &lt 3 SPACE  &lt 1 DEL
+            //                                            |MEDIA/TAB |  SPACE   |   | NAV/RET  | NUM/DEL  |
+                                                           &lt 3 TAB  &kp SPACE     &lt 3 ENTER  &lt 1 DEL
             >;
         };
         num { // Layer 1
@@ -65,10 +70,10 @@
             // ---------------------------------------------------------------- NUMPAD -------------------------------------------------
             //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
             //|          |          |    (     |    )     |    [     |    ]     |   |          |    7     |    8     |    9     |    +     |          |
-                 &none     &none      &kp LPAR   &kp RPAR   &kp LBKT   &kp RBKT        &none    &kp N7     &kp N8     &kp N9     &kp PLUS      &none
+                 &none     &none      &kp LPAR   &kp RPAR   &kp LBKT   &kp RBKT       &kp DOT    &kp N7     &kp N8     &kp N9     &kp PLUS      &none
             //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            //|          |          |          |          |          |    |     |   |    .     |    4     |    5     |    6     |    0     |    =     |
-                 &none     &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT &kp PIPE       &kp DOT     &kp N4     &kp N5     &kp N6    &kp N0     &kp EQUAL
+            //|          |          |          |          |          |    |     |   |    0     |    4     |    5     |    6     |          |    =     |
+                 &none     &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT &kp PIPE       &kp N0     &kp N4     &kp N5     &kp N6     &none     &kp EQUAL
             //           |──────────┼──────────┼──────────┼──────────|                         |──────────┼──────────┼──────────┼──────────|
             //           |    <     |    >     |    {     |    }     |                         |    1     |     2    |    3     |    -     |
                             &kp LT    &kp GT     &kp LBRC    &kp RBRC                            &kp N1      &kp N2    &kp N3    &kp MINUS
